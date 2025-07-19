@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #282c34;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #61dafb;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #61dafb;
+}
+
+section {
+    padding: 40px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+}
+
+.projects,
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project,
+.recommendation {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#home-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 32px;
+    background: #282c34;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Popup */
+#popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4BB543;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    font-size: 16px;
+}
+
+/* Add to style.css */
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-greeting {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d7be5;
+    margin-bottom: 0.5rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-desc {
+    margin-top: 0;
+}

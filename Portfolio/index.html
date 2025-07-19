@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="name">Adit Ghosh</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#recommendations">Recommendations</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-flex">
+            <img src="image.png" alt="Profile Image" />
+            <div class="about-text">
+                <div class="about-greeting">Hi! I'm Adit Ghosh</div>
+                <p class="about-desc">
+                    A passionate software developer with 3 years of experience in building responsive web applications.
+                    I specialize in JavaScript frameworks and love solving complex problems through code.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                <p>HTML5</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                <p>CSS3</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript" />
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS" />
+                <p>NodeJS</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Task Manager App</h3>
+                <p>A simple and elegant to-do list app using React and localStorage.</p>
+            </div>
+            <div class="project">
+                <h3>Weather Dashboard</h3>
+                <p>Real-time weather updates using OpenWeatherMap API and JavaScript.</p>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A modern, mobile-first personal portfolio built with HTML, CSS & JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendations" id="recommendation-list">
+            <div class="recommendation">"Adit is a highly motivated and skilled developer. Always delivers on time!" –
+                Emma Smith</div>
+            <div class="recommendation">"A pleasure to work with. Great team player and problem solver." – Liam Johnson
+            </div>
+            <div class="recommendation">"Adit 's attention to detail and code quality is unmatched." – Sophia Lee</div>
+        </div>
+
+        <h3>Add a Recommendation</h3>
+        <form id="recommendation-form">
+            <div class="form-group">
+                <input type="text" id="new-recommendation" placeholder="Write a recommendation..." required />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Confirmation Popup -->
+    <div id="popup">Thank you for leaving a recommendation!</div>
+
+    <!-- Home Icon -->
+    <div id="home-icon" onclick="scrollToTop()">🏠</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
